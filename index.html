@@ -1,0 +1,35 @@
+<!-- Gabriel Levin's Chat Bot, named Servus Bot. This is my submission on December 27th, 2021 for admission to Codework's
+Bootcamps Software Engineering Program. This application is designed to meet the following critera:
+        - On one side the computer will generate a random conversation, on the other side the user can post messages.
+        - The screen should automatically flow and follow the messages posted, like in all chat apps.
+        - Each message should have an indication of the date and time it was sent.
+        - Your CSS needs to be clean.
+        - Use 3 separate files: one for CSS, one for HTML, and one for JavaScript and jQuery. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <title>Servus App</title>
+</head>
+
+<link href="style.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="script.js"></script>
+
+<body class="background">
+    <div class="title"> Servus Bot</div>
+    <div id="message-board">
+        <div class="post post-bot"> Servus! Before we begin, what is your name?</div>
+    </div>
+    <div id="form" class="bg-light">
+        <button id="send" class="favorite styled" type="button"> Send</button>
+        <div id="message" placeholder="Type your message here" rows="1" contenteditable
+            oninput="if(this.innerHTML.trim()==='<br>')this.innerHTML=''"></div>
+    </div>
+    </div>
+</body>
+
+</html>
